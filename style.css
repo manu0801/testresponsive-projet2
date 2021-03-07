@@ -1,0 +1,812 @@
+/*police*/
+@font-face {
+    font-family: "raleway";
+    src: url(font/Raleway-VariableFont_wght.ttf);
+  }
+  body {
+    width: auto;
+    font-family: "raleway", Arial, Helvetica, sans-serif;
+  }
+  main{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  /*css du header*/
+  header {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  /*titres et logo fini*/
+  #logo {
+    width: auto;
+    padding-top: 40px;
+  }
+  /*navigation*/
+  #navigation {
+    display: flex;
+  }
+  #menu a {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+  }
+  .ancre1 {
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    border-top: 3px solid white;
+  }
+  .ancre2 {
+    padding-top: 40px;
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 3px solid white;
+  }
+  #inscription {
+    padding-top: 40px;
+    margin-top: 10px;
+    padding-right: 30px;
+  }
+  #menu {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #menu a:hover {
+    color: #0065fc;
+    border-top: 3px solid;
+    padding-top: 40px;
+    margin-top: 10px;
+  }
+  #sinscrire {
+    color: #0065fc;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: 40px;
+    border-top: 3px solid white;
+
+  }
+  #inscription a:hover {
+    color: #0065fc;
+    border-top: 3px solid;
+    padding-top: 40px;
+    margin-top: 10px;
+  }
+  #titre_principal {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    
+  }
+  #titre_principal h1 {
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-size: 1.5em;
+  
+  }
+  #titre_principal h2 {
+    font-weight: 200;
+    margin-top: 0%;
+    padding-top: 20px;
+    font-size: 1em;
+  }
+  /*barre de recherche*/
+  .icone{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .recherche {
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    
+    
+  }
+  .champs {
+    border: none;
+    width: 210px;
+    height: 37px;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .bouton {
+    background-color: #0065fc;
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .fa-search {
+    padding: 11px 11px 11px 11px;
+    border-radius: 10px 0px 0px 10px;
+    color: white;
+  }
+  #loupe {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #0065fc;
+    display: none;
+  }
+  /*ne plus toucher*/
+  #logements {
+    line-height: 80px;
+    width: 36%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+      
+  }
+  .infotitre h2{
+    font-size: 1em;
+    font-weight: 100;
+  } 
+  .info{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #f2f2f2;    
+  }
+  .fa-info {
+    color: #0065fc;    
+  }
+  /*filtre*/
+  #filtres {
+    width: 70%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 1em;
+    font-weight: 600;   
+  }
+  .choix {
+    width: 100%;
+    display: flex;    
+  }
+  #checkbox1et2 {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #checkbox3et4 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .choix input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  label  {
+    color: black;    
+  }
+  .checkbox1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;  
+  }
+  .fa-money-bill-wave {
+    color: #0065fc;    
+  }
+  .icone_filtres{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #deebff;
+  }
+  .checkbox1:hover {
+    background-color: #deebff;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+  .checkbox2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    width: 130px;
+    height: 40px;
+    border-radius: 25px;
+  }
+  .fa-child {
+    color: #0065fc;
+  }
+  .checkbox2:hover {
+    background-color: #deebff;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+  .checkbox3 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+  }
+  .fa-heart {
+    color: #0065fc;
+  }
+  .checkbox3:hover {
+    background-color: #deebff;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+  .checkbox4 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+  }
+  .fa-dog {
+    color: #0065fc;
+  }
+  .checkbox4:hover {
+    background-color: #deebff;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+  /*resultats*/
+  section {
+    width: auto;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  /*hebergement*/
+  .hebergement {
+    width: 830px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    
+  }
+  #hotels {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    grid-template-rows: repeat(2, 185px);
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    
+  }
+  #ancre1 h2 {
+    font-size: 20px;
+    margin-left: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+  }
+  .hebergement h2 {
+    height: 30px;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 0px;
+    padding: 10px 10px 0px 10px;
+  }
+  .hebergement a {
+    text-decoration: none;
+    color: black;
+  }
+  .hebergement a:hover {
+    text-decoration: underline;
+  }
+  #hotels a {
+    text-decoration: none;
+    color: black;
+  }
+  #hotels a:hover {
+    transform: scale(1.05);
+  }
+  /*debut des cartes*/
+  .carte {
+    width: 240px;
+    height: 185px;
+    background-color: white;
+    display: grid;
+    grid-template:
+      repeat(2, 55px) repeat(3, 25px)
+      / repeat(3, 80px);
+    border-radius: 15px;
+    transition: 1s;
+  }
+  .divimg1 {
+    grid-area: 1 / 1 / 3 / 4;
+    background: url(images/cannebiere.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+    border: 4px solid white;
+  }
+  .info1 {
+    grid-area: 3 / 1 / 4 / 4;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  .prix1 {
+    grid-area: 4 / 1 / 5 / 4;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .fa-star {
+    color: #0065fc;
+    grid-area: 5 / 1 / 6 / 2;
+    font-size: 0.7em;
+  }
+  .divimg2 {
+    grid-area: 1 / 1 / 3 / 4;
+    background: url(images/port.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+    border: 4px solid white;
+  }
+  .info2 {
+    grid-area: 3 / 1 / 4 / 4;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  .prix2 {
+    grid-area: 4 / 1 / 5 / 4;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .divimg3 {
+    grid-area: 1 / 1 / 3 / 4;
+    background: url(images/mouettes.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+    border: 4px solid white;
+  }
+  .info3 {
+    grid-area: 3 / 1 / 4 / 4;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  .prix3 {
+    grid-area: 4 / 1 / 5 / 4;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .divimg4 {
+    grid-area: 1 / 1 / 3 / 4;
+    background: url(images/mer.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+    border: 4px solid white;
+  }
+  .info4 {
+    grid-area: 3 / 1 / 4 / 4;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  .prix4 {
+    grid-area: 4 / 1 / 5 / 4;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .divimg5 {
+    grid-area: 1 / 1 / 3 / 4;
+    background: url(images/panier.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+    border: 4px solid white;
+  }
+  .info5 {
+    grid-area: 3 / 1 / 4 / 4;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  .prix5 {
+    grid-area: 4 / 1 / 5 / 4;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .divimg6 {
+    grid-area: 1 / 1 / 3 / 4;
+    background: url(images/amina.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+    border: 4px solid white;
+  }
+  .info6 {
+    grid-area: 3 / 1 / 4 / 4;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  .prix6 {
+    grid-area: 4 / 1 / 5 / 4;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .star {
+    display: flex;
+  }
+  /*populaires*/
+  aside {
+    background-color: #f2f2f2;
+    height: 550px;
+    width: 400px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  aside a {
+    text-decoration: none;
+    color: black;
+  }
+  #titretop {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .fa-chart-line {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+  aside h2 {
+    font-size: 20px;
+    padding: 0px 10px 10px 0px;
+    font-weight: 700;
+  }
+  .topcarte {
+    width: 345px;
+    height: 135px;
+    margin-top: 0%;
+    background-color: white;
+    display: grid;
+    margin-bottom: 0px;
+    grid-template: 55px 45px 35px / 145px 200px;
+    border-radius: 15px;
+    transition: 1s;
+  }
+  aside a:hover {
+    transform: scale(1.05);
+  }
+  .topimg1 {
+    grid-area: 1 / 1 /4 / 2;
+    background: url(images/soleil\ du\ matin.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 0px 0px 15px;
+    border: 4px solid white;
+  }
+  .topinfo1 {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .topprix1 {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 10px;
+    padding: 10px;
+  }
+  
+  .topimg2 {
+    grid-area: 1 / 1 /4 / 2;
+    background: url(images/aucoeurdeleau.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 0px 0px 15px;
+    border: 4px solid white;
+  }
+  .topinfo2 {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .topprix2 {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 10px;
+    padding: 10px;
+  }
+  
+  .topimg3 {
+    grid-area: 1 / 1 /4 / 2;
+    background: url(images/bleuetblanc.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 0px 0px 15px;
+    border: 4px solid white;
+  }
+  .topinfo3 {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .topprix3 {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 10px;
+    padding: 10px;
+  }
+  /*activité fini css et responsive*/
+  article {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  article a {
+    text-decoration: none;
+    color: black;
+  }
+  article h1 {
+    grid-area: 1 / 2 / 2 / 5;
+    font-size: 20px;
+    padding: 10px 10px 10px 0px;
+    font-weight: 700;
+  }
+  #activite {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .petitevignette1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .petitevignette2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .activites1 {
+    width: 300px;
+    height: 500px;
+    display: grid;
+    grid-template: 450px 50px / 300px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+  }
+  .acticlik1:hover {
+    transform: rotate(2deg);
+  }
+  .acticlik1 {
+    grid-area: 2 / 2 / 8 / 3;
+  }
+  .img1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background: url(images/vieuxport.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .nom1 {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 10px 10px 5px;
+  }
+  .activites2 {
+    width: 300px;
+    height: 250px;
+    display: grid;
+    grid-template: 200px 50px / 300px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+  }
+  .acticlik2:hover {
+    transform: rotate(2deg);
+  }
+  .acticlik2 {
+    grid-area: 2 / 4 / 5 / 5;
+  }
+  .img2 {
+    grid-area: 1 / 1 / 2 / 2;
+    background: url(images/pomegues.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .nom2 {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 10px 10px 5px;
+  }
+  .activites3 {
+    width: 300px;
+    height: 200px;
+    display: grid;
+    grid-template: 150px 50px / 300px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+  }
+  .acticlik3:hover {
+    transform: rotate(2deg);
+  }
+  .acticlik3 {
+    grid-area: 6 / 4 / 8 / 5;
+  }
+  .img3 {
+    grid-area: 1 / 1 / 2 / 2;
+    background: url(images/frioul.jpg);
+    background-size: 120%;
+    background-position-y: top;
+    background-position-x: right;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .nom3 {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 10px 10px 5px;
+  }
+  .activites4 {
+    width: 300px;
+    height: 500px;
+    display: grid;
+    grid-template: 450px 50px / 300px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+  }
+  .acticlik4:hover {
+    transform: rotate(2deg);
+  }
+  .acticlik4 {
+    grid-area: 2 / 6 / 8 / 7;
+  }
+  .img4 {
+    grid-area: 1 / 1 / 2 / 2;
+    background: url(images/calanques.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .nom4 {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 10px 10px 5px;
+  }
+  .activites5 {
+    width: 300px;
+    height: 180px;
+    display: grid;
+    grid-template: 130px 50px / 300px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+  }
+  .acticlik5:hover {
+    transform: rotate(2deg);
+  }
+  .acticlik5 {
+    grid-area: 2 / 8 / 4 / 9;
+  }
+  .img5 {
+    grid-area: 1 / 1 / 2 / 2;
+    background: url(images/notredamedelagarde.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .nom5 {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 10px 10px 5px;
+  }
+  .activites6 {
+    width: 300px;
+    height: 260px;
+    display: grid;
+    grid-template: 210px 50px / 300px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+  }
+  .acticlik6:hover {
+    transform: rotate(2deg);
+  }
+  .acticlik6 {
+    grid-area: 5 / 8 / 7 / 9;
+  }
+  .img6 {
+    grid-area: 1 / 1 / 2 / 2;
+    background: url(images/longchamp.jpg);
+    background-size: 125%;
+    background-position-y: top;
+    background-position-x: center;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .nom6 {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 10px 10px 5px;
+  }
+  /* footer terminé css et responsive*/
+  footer {
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    display: flex;
+  }
+  #navfooter {
+    width: 100%;
+    display: flex;
+    padding: 25px 25px 25px 25px;
+    justify-content: space-around;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  footer h2 {
+    font-size: 1.1em;
+  }
+  #navfooter li {
+    list-style-type: none;
+  }
+  #navfooter ul {
+    padding-left: 0%;
+  }
+  footer nav a {
+    color: black;
+    font-size: 0.5em;
+    padding-bottom: 10px;
+    text-decoration: none;
+  }
+  footer nav a:hover {
+    color: #0065fc;
+    text-decoration: underline;
+  }
+  
